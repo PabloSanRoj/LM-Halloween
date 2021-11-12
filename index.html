@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scary Halloween Party</title>
+  <link rel="stylesheet" href="./styles/halloween.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <script src="./javascripts/halloween.js"></script>
+</head>
+<body onload="sonar('ambient')">
+      <!-- el sonido lo saco fuera del container porque no va a
+           tener nada visible (controles) -->
+      <audio id="aullido">
+        <source src="./sounds/wolfsound.mp3">
+      </audio>
+
+      <audio id="ambient">
+        <source src="./sounds/ambient_5.mp3">
+      </audio>
+
+      <audio id="murcielagos">
+        <source src="./sounds/cave-bats.mp3">
+      </audio>
+
+      <audio id="zombies">
+        <source src="./sounds/008553943_prev.mp3">
+      </audio>
+      <!-- el layout básico incluye un container -->
+      <!-- ATENCIÓN: Esta página no va a ser responsive -->
+      <div id="container">
+
+        <p id="p1">Scary Halloween Party</p>
+
+        <!-- Primer Efecto: La luna -->
+        <p id="p2">Don´t knock on the moon</p>
+
+        <p id="p3">Don´t knock on the bats</p>
+
+        <p id="p4">Don´t knock on the pumpkin</p>
+        <img id="wolf" src="./images/howling-wolf-57.gif" alt="">
+        <!-- creo un div vacio para definir el rectángulo sensible -->
+        <div id="moon" onmouseover="mostrar('wolf');sonar('aullido')"
+                       onmouseout="ocultar('wolf');parar('aullido')"></div>
+
+        <img id="bat" src="./images/bats_2ldxqrmv-twilightwap.com.gif" alt="">
+
+        <div id="bats" onmouseover="mostrar('bat');sonar('murcielagos')"
+                       onmouseout="ocultar('bat');parar('murcielagos')"></div>
+        
+        <img id="zombie" src="./images/tumblr_nltguigMAV1s4y0lso1_400.gif" alt="">
+
+        <div id="calabaza" onmouseover="mostrar('zombie');sonar('zombies')"
+                           onmouseout="ocultar('zombie');parar('zombies')"></div>
+      </div>
+</body>
+</html>

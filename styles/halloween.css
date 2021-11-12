@@ -1,0 +1,81 @@
+/*********  Stylesheet for halloween ********/
+/*********  This Page is not responsive al all *******/
+
+@font-face {
+  font-family: 'HalloweenFont';
+  src: url('../fonts/HalloweenPartyTTF.ttf');
+}
+
+body {background-color: black;
+      color:white;
+      font-family: 'HalloweenFont';
+      }
+
+#container {background-image: url("../images/Fondo.jpg");
+            width:1256px; /* fijo el ancho como el de la imagen */
+            height:620px; /* fijo el alto como el de la imagen */
+            margin:auto;
+            position: relative; /* el container se mueve por la pantalla */
+            }
+
+#p1 {font-size: 2em;
+     text-shadow: 3px 3px 3px red;
+     position: absolute; /* fijo, clavado, dentro de su contenedor + #container */
+     top:30px;
+     left: 150px;
+     }
+
+#p2 {font-size: 1em;
+     text-shadow: 3px 3px 3px blue;
+     position: absolute;
+     top: 130px;
+     left: 450px;}
+
+#p3 {font-size: 1em;
+     text-shadow: 3px 3px 3px blue;
+     position:absolute;
+     top: 190px;
+     left: 670px;}
+
+#p4 {font-size: 1em;
+     text-shadow: 3px 3px 3px blue;
+     position:absolute;
+     top: 350px;
+     left: 500px;}
+
+#wolf {width: 80px;
+       position: absolute;
+       top:130px;
+       left: 300px;
+       visibility: hidden;}
+
+#moon {width: 245px;
+       height: 245px;
+       position: absolute;
+       top: 49px;
+       left: 215px;
+       border-radius: 50%;}
+
+#bat  {width: 150px;
+       position: absolute;
+       top:190px;
+       left: 550px;
+       visibility: hidden;}
+
+#bats {width: 100px;
+     height: 100px;
+     position: absolute;
+     top: 190px;
+     left: 550px;}
+
+#zombie {width: 150px;
+         position: absolute;
+         top:240px;
+         left: 950px;
+         visibility:hidden}
+
+#calabaza {width: 300px;
+          height: 300px;
+          position: absolute;
+          top: 240px;
+          left: 950px;}
